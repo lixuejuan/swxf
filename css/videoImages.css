@@ -1,0 +1,572 @@
+body {
+    background-image: url(../images/videos.jpg);
+    background-size: cover;
+    background-positoion: center top;
+}
+
+/*导航end*/
+/*视频 start*/
+.header{
+    height: 140px;
+}
+.vocabulary {
+    height: 119px;
+    line-height: 119px;
+    margin-top: 20px;
+}
+
+.vocabulary h1 {
+    line-height: 119px;
+    text-align: center;
+    color: #f0edf2;
+    font-size: 5rem;
+    font-style: italic;
+    font-weight: normal;
+
+}
+
+/*视频 end*/
+
+/*两张图片 start*/
+.three-people, .fire {
+    width: 48.5%;
+    height: 334px;
+    border: 4px solid rgba(255, 255, 255, 0.0);
+    border-radius: 4px;
+    padding: 2px;
+    position: relative;
+}
+
+.out-border {
+    width: 100%;
+    height: 334px;
+    overflow: hidden;
+    position: relative;
+    left: -2px;
+    top: -2px;
+    border-radius: 2px;
+    border: 2px solid rgba(0, 195, 255, 0);
+}
+
+.out-border .video1, .fire .video2 {
+    display: inline-block;
+    width: 99.2%;
+    height: 344px;
+    background: url("../images/cinematic-trailer.32Pn2.jpg");
+    background-size: cover;
+    margin: 2px;
+    border-radius: 2px;
+}
+
+.out-border em, .fire em{
+    display: inline-block;
+    width: 50px;
+    height: 55px;
+    background: url("../images/youtube-btn-ylw.png") no-repeat;
+    position: absolute;
+    top: 146px;
+    left: 278px;
+    z-index: 3;
+}
+
+.out-border .description {
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background: rgba(0, 195, 255, .8);
+    line-height: 30px;
+    color: #fff;
+    font-size: 20px;
+    display: none;
+}
+
+.out-border .bgColor {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 60,0);
+}
+
+.fire .video2 {
+    background: url(../images/gameplay.jpg);
+}
+
+.fire em {
+    background: url(../images/youtube-btn-ylw.png) no-repeat;
+}
+
+/*两张图片 end*/
+
+/*英雄介绍 start*/
+.heros-item {
+    margin-bottom: 45px;
+    margin-top: 5px;
+}
+.heros-item .category {
+    width: 23.6%;
+    height: 169px;
+    float: left;
+    margin: 3px;
+    position: relative;
+    border: 3px solid rgba(255, 255, 255, 0.0);
+    border-radius: 3px;
+    padding: 2px;
+}
+.category .out-border{
+    width: 100%;
+    height: 169px;
+}
+.heros-item em {
+    top: 65px;
+    left: 144px;
+}
+
+.heros-item .heroImg {
+    display: inline-block;
+    width: 100%;
+    height: 169px;
+    background-size: cover;
+}
+
+/*英雄介绍 end*/
+
+/*footer部分start*/
+.footer-bar {
+    height: 225px;
+    /*line-height: 305px;*/
+    background: url(../images/buy-bar-bg.jpg) no-repeat;
+    border-top: solid 5px #989798;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 80px;
+}
+
+.footer-bar .gameInstall-tips {
+    position: relative;
+}
+
+.footer-bar .set-icon {
+    display: inline-block;
+    background: url(../images/buytips-icon.png) no-repeat;
+    width: 21px;
+    height: 22px;
+    position: absolute;
+    top: 0px;
+    left: 280px;
+}
+
+.footer-bar strong {
+    font-size: 15px;
+    color: #FFC70E;
+}
+
+.footer-bar .gameInstall-tips {
+    color: white;
+    font-size: 14px;
+}
+
+.footer-bar .gameInstall-tips a {
+    color: #FFC70E;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+.footer-bar .buy-now {
+    width: 180px;
+    height: 52px;
+    line-height: 52px;
+    display: inline-block;
+    background-color: #ffb033;
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+    padding: 10px 5%;
+    margin-bottom: 19px;
+    opacity: 0.8;
+    filter: Alpha(opacity=800);
+
+}
+
+.footer-bar .buy-now:hover {
+    opacity: 1;
+    filter: Alpha(opacity=100);
+}
+
+.footer-bar .gameInstall-tips {
+    margin-bottom: 27px;
+}
+
+.footer-bar .joinus {
+    display: inline-block;
+    height: 30px;
+    padding-top: 10px;
+    width: 144px;
+    color: #FFC70E;
+    border: 2px solid #FFC70E;
+    font: normal normal normal 15px Arial, "microsoft yahei", sans-serif;
+    font-weight: 700;
+}
+
+.footer-bar .joinus:hover {
+    color: white;
+    border: 2px solid white;
+}
+
+/*footer部分end*/
+
+.slider-role {
+    width: 100%;
+    height: 1100px;
+    position: relative;
+    overflow: hidden;
+    /*top:300px;*/
+}
+
+.slider-game-role {
+    width: 1200px;
+    height: 450px;
+    position: absolute;
+    left: 50%;
+    margin-left: -600px;
+    top: 250px;
+    overflow: hidden;
+}
+.slider-game-role img {
+    width: 800px;
+    height: 450px;
+}
+
+.slider-game-role li {
+    width: 253px;
+    height:450px;
+    float: left;
+}
+
+.slider-map {
+    /*width: 1200px;*/
+    height: 310px;
+    position: absolute;
+    left: 50%;
+    margin-left: -600px;
+    /*background-color: pink;*/
+    top: 680px;
+    /*overflow: hidden;*/
+}
+
+.slider-map ul {
+    width: 5000px;
+    position: absolute;
+}
+
+.slider-map li {
+    float: left;
+    width: 200px;
+}
+.slider-map li img {
+    width: 200px;
+    height: 300px;
+}
+
+
+.top-title {
+    /*height: 170px;*/
+    width: 925px;
+    left: 50%;
+    margin-left: -450px;
+    position: absolute;
+    top: 50px;
+    color: #F0EDF2;
+    text-align: center;
+}
+
+.top-title .title {
+    font: italic normal 10px "Big Noodle Too", "microsoft yahei", sans-serif;
+    font-size: 40px;
+}
+
+.top-title p {
+    margin-top: 20px;
+    line-height:50px;
+    font-size: 18px;
+}
+
+.left-content {
+    margin-left: 57px;
+    width: 600px;
+    height: 600px;
+    /*background-color: yellow;*/
+    position: absolute;
+    top: 436px;
+}
+
+.skill {
+    color: #f0edf2;
+    font-size: 20px;
+    margin-top: 60px;
+}
+
+.left-content p {
+    color: #f0edf2;
+    /*margin-top: 20px;*/
+    line-height: 40px;
+    font-size: 14px;
+}
+
+.game-start {
+    width: 100%;
+    height: 1435px;
+    background: url("../images/bg-howtoplay.jpg") center top no-repeat;
+    position: relative;
+    top: -180px;
+    border-top: 5px solid #858387;
+}
+
+.game-start .left-content {
+    margin-left: 57px;
+    width: 600px;
+    height: 600px;
+    /*background-color: yellow;*/
+    position: absolute;
+    top: 120px;
+}
+
+.game-start .top-title {
+    position: absolute;
+    top: 50px;
+}
+
+.game-start .content-bot {
+    width: 550px;
+    height: 350px;
+    background-color: #283148;
+    position: absolute;
+    top: 950px;
+    left: 50px;
+    padding: 0 20px;
+    color: #9DAAC8;
+}
+
+.content-bot h6 {
+    font-size: 18px;
+    color: #f0edf2;
+    line-height: 60px;
+    margin-top: 10px;
+}
+.content-bot p {
+    line-height: 25px;
+}
+
+.gain-reward {
+    overflow: hidden;
+}
+
+.gain-reward .top-title {
+    width: 925px;
+    left: 50%;
+    margin-left: -450px;
+    position: absolute;
+    top: 50px;
+    color: #F0EDF2;
+    text-align: center;
+}
+
+.gain-reward {
+    width: 100%;
+    height: 1490px;
+    position: relative;
+    top: -180px;
+    border-top: 5px solid #858387;
+}
+
+.gain-reward .badge {
+    width: 600px;
+    height: 150px;
+    background-break: pink;
+    position: absolute;
+    top: 920px;
+    right: 150px;
+
+}
+
+.supply p {
+    color: #f0edf2;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.gain-reward .supply {
+    width: 700px;
+    height: 150px;
+    position: absolute;
+    top: 665px;
+    left: 140px;
+}
+
+.badge p {
+    color: #f0edf2;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.gain-reward .progression {
+    width: 100%;
+    height: 750px;
+    position: absolute;
+    top: 50px;
+}
+
+.gain-reward .graphic {
+    width: 255px;
+    height: 215px;
+    position: absolute;
+    right: 140px;
+    top: 700px;
+}
+
+.gain-reward .achievement {
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    top: 830px;
+    left: 30px;
+}
+
+.game-model {
+    position: relative;
+}
+
+.game-model .game-modes {
+    width: 100%;
+    height: 1276px;
+    position: relative;
+    top: -470px;
+    border-top: 5px solid #858387;
+
+}
+
+.game-model .model-image {
+    width: 1100px;
+    /*height:1000px;*/
+    /*background-color: pink;*/
+    position: absolute;
+    top: -230px;
+    left: 50%;
+    margin-left: -500px;
+}
+
+.model-image img {
+    width: 300px;
+    height: 450px;
+
+}
+
+.model-image li {
+    display: block;
+    position: relative;
+    margin: 20px;
+    float: left;
+}
+
+.model-image .game-produce {
+    /*height: 160px;*/
+    background-color: #2B3248;
+    position: absolute;
+    bottom:0;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    opacity: 0;
+
+}
+
+.game-produce h2 {
+    color: #f0edf2;
+    font: italic normal 10px "Big Noodle Too", "microsoft yahei", sans-serif;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.game-produce p {
+    color: #9DAAC8;
+    margin-top: 15px;
+}
+
+.model-title {
+    width: 925px;
+    left: 50%;
+    margin-left: -450px;
+    position: absolute;
+    top: -400px;
+    color: #F0EDF2;
+    text-align: center;
+}
+
+.model-title .title {
+    font: italic normal 10px "Big Noodle Too", "microsoft yahei", sans-serif;
+    font-size: 40px;
+
+}
+
+.model-title p {
+    margin-top: 20px;
+    line-height: 40px;
+    font-size: 22px;
+}
+
+.game-modes .game-title {
+    width: 925px;
+    height: 170px;
+    background-color: pink;
+    position: absolute;
+    top: 0px;
+}
+
+/*.game-modes ul li {*/
+/*float: left;*/
+
+/*}*/
+
+.last-column {
+    width: 100%;
+    height: 257px;
+    background-color: #2D374F;
+    position: relative;
+    top: -470px;
+    border-top: 5px solid #858387;
+    border-bottom: 5px solid #969BA7;
+
+}
+
+.last-column .hanzo-genji {
+    position: absolute;
+    width: 345px;
+    height: 325px;
+    top: -68px;
+    left: 130px;
+}
+
+.last-column .right-content {
+    width: 483px;
+    height: 200px;
+    /*background-color: pink;*/
+    position: absolute;
+    top: 33px;
+    right: 190px;
+}
+
+.right-content .title {
+    color: #f0edf2;
+    font: italic normal 10px "Big Noodle Too", "microsoft yahei", sans-serif;
+    font-size: 40px;
+}
+
+.right-content p {
+    color: #9DAAC8;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 20px;
+}

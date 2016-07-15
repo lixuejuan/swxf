@@ -1,0 +1,349 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+/*各浏览器显示不同，去掉蓝色边框*/
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun";
+}
+
+/*去掉行内替换元素空白缝隙*/
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+/*防止拖动 影响布局*/
+textarea {
+    resize: none;
+}
+
+/*去掉行内替换元素空白缝隙*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53"; /*宋体 unicode */
+    color: #666;
+    background: #fff;
+}
+
+/*清除浮动*/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C81623;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+/*公共类*/
+.w {
+    /*版心 提取 */
+    width: 1144px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.al {
+    text-align: left;
+}
+
+.ac {
+    text-align: center;
+}
+
+.ar {
+    text-align: right;
+}
+
+.hide {
+    display: none;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 20px;
+    margin: 0;
+}
+.nav li a{
+    font-family: "微软雅黑";
+}
+
+/*背景部分开始*/
+.bg {
+    height: 1414px;
+    background-image: url("../images/ow-heroes-bg.jpg");
+    border-bottom: 5px solid #878790;
+    overflow: hidden;
+}
+
+.nav-hero {
+    border-bottom: 5px solid #3cd1ff;
+    background-color: rgba(60, 209, 255, 0.3);
+}
+
+/*主体部分开始*/
+.hero h1 {
+    margin-top: 60px;
+    font: italic 400 68px/68px "microsoft yahei";
+    color: #405275;
+    padding-bottom: 30px;
+}
+
+.hero h6 {
+    font: 400 28px/28px "microsoft yahei";
+    color: #405275;
+    padding-bottom: 60px;
+}
+
+/*导航部分开始*/
+.hero-nav ul {
+    width: 1300px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.hero-nav li {
+    float: left;
+    width: 228px;
+    height: 44px;
+    line-height: 44px;
+    font-weight: 700;
+    color: #1A325E;
+    text-align: center;
+    border-radius: 2px;
+    background-color: white;
+    opacity: 0.5;
+    margin-left: 1px;
+    cursor: pointer;
+    position: relative;
+}
+
+.hero-nav .icon {
+    width: 118px;
+    text-align: left;
+    padding-left: 110px;
+}
+
+.hero-nav .attack {
+    position: absolute;
+    top: 10px;
+    left: 80px;
+    width: 24px;
+    height: 24px;
+    background: url("../images/hero_icon.png") no-repeat 0px -47px;
+}
+
+.hero-nav .defense {
+    position: absolute;
+    top: 10px;
+    left: 80px;
+    width: 24px;
+    height: 24px;
+    background: url("../images/hero_icon.png") no-repeat 0px 0px;
+}
+
+.hero-nav .reshipment {
+    position: absolute;
+    top: 10px;
+    left: 80px;
+    width: 24px;
+    height: 24px;
+    background: url("../images/hero_icon.png") no-repeat 0px -23px;
+}
+
+.hero-nav .support {
+    position: absolute;
+    top: 10px;
+    left: 80px;
+    width: 24px;
+    height: 24px;
+    background: url("../images/hero_icon.png") no-repeat 0px -74px;
+}
+
+/*导航部分结束*/
+
+/*主体内容部分开始*/
+.hero-main {
+    position: relative;
+}
+
+.hero-main li {
+    position: absolute;
+    width: 154px;
+    height: 265px;
+    border: 2px solid #E6DFEB;
+    border-bottom: 3px solid #3D4960;
+    cursor: pointer;
+}
+.hero-main span {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 66px;
+    background-color: rgba(50, 50, 100, .9);
+    text-align: center;
+    font: italic 400 30px/66px "microsoft yahei";
+    color: #D0D0DC;
+}
+
+.hero-main .attack {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 24px;
+    height: 24px;
+    background: url("../images/hero_icon.png") no-repeat 0px -148px;
+}
+
+.hero-main .defense {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 24px;
+    height: 24px;
+    background: url("../images/hero_icon.png") no-repeat 0px -100px;
+}
+
+.hero-main .reshipment {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 24px;
+    height: 24px;
+    background: url("../images/hero_icon.png") no-repeat 0px -124px;
+}
+
+.hero-main .support {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 24px;
+    height: 24px;
+    background: url("../images/hero_icon.png") no-repeat 0px -174px;
+}
+
+.hero-main .change-color {
+    background-color: white;
+    color: #1A325E;
+}
+
+/*主体内容部分结束*/
+
+/*购买部分开始*/
+.purchase {
+    height: 305px;
+    background: url("../images/buy-bar-bg.jpg") no-repeat;
+    text-align: center;
+    overflow: hidden;
+}
+
+.purchase .purchase-btn {
+    margin: 80px auto 16px;
+    display: block;
+    width: 248px;
+    height: 52px;
+    background-color: #FF9C00;
+    font: 400 26px/52px "microsoft yahei";
+    color: #000000;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.purchase .purchase-btn:hover {
+    background-color: #FFB033;
+}
+
+.purchase p {
+    background: url("../images/buytips-icon.png") 230px 0 no-repeat;
+    color: white;
+}
+
+.purchase span {
+    font-weight: 700;
+    color: #FFC70E;
+}
+
+.purchase a {
+    color: #FFC70E;
+    text-decoration: underline;
+}
+
+.purchase .join-we {
+    margin: 20px auto 0px;
+    display: block;
+    width: 144px;
+    height: 40px;
+    border: 2px solid #FFC70E;
+    line-height: 40px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.purchase .join-we:hover {
+    border-color: white;
+    color: white;
+}
+
+/*购买部分结束*/

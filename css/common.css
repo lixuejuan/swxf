@@ -1,0 +1,442 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+/*各浏览器显示不同，去掉边框*/
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+/*去掉行内替换元素空白缝隙*/
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+/*防止拖动 影响布局*/
+textarea {
+    resize: none;
+}
+
+/*去掉行内替换元素空白缝隙*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+body {
+    font: 12px/150% Arial, "microsoft yahei", sans-serif;
+    color: #405275;;
+}
+
+/*清除浮动*/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+/*公共类  版心*/
+.wrap {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.al {
+    text-align: left;
+}
+
+.ac {
+    text-align: center;
+}
+
+.ar {
+    text-align: right;
+}
+
+.hide {
+    display: none;
+}
+
+/* S= header部分*/
+.header{
+    height: 140px;
+}
+.top {
+    height: 44px;
+    background-color: rgba(2, 25, 72, .3);
+    font-size: 18px;
+    padding: 0 20px;
+    position: relative;
+    z-index: 300;
+}
+
+.top li {
+    float: left;
+    height: 44px;
+    line-height: 44px;
+}
+
+.top li a {
+    color: #e6e9ef;
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.top li a:hover {
+    color: #FFF;
+}
+
+.top_left .top_l_icon {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    background: url("../images/logo-bnet-compact.png") center -3px;
+}
+
+.top_l_icon:hover {
+    background-position: center -52px;
+}
+
+.top .dropdown {
+    background: url("../images/sprite-16-white.png") -64px -256px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    opacity: 0.3;
+    margin: -3px 0 -3px 6px;
+}
+
+.top_right .dropdown {
+    margin-right: -15px;
+}
+
+.top_left .game ul {
+    position: absolute;
+    top: 40px;
+    z-index: 5;
+    width: 360px;
+    background-color: #272E3B;
+    border: solid 1px #3d434f;
+    border-bottom: none;
+    display: none;
+}
+
+.game li {
+    width: 119px;
+    height: 116px;
+    float: left;
+    text-align: center;
+    border-right: solid 1px #3d434f;
+    border-bottom: solid 1px #3d434f;
+}
+
+.game li:hover {
+    background-color: #313844;
+}
+
+.game li a {
+    height: 116px;
+    padding: 0;
+    position: relative;
+}
+
+.game li i {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background: url("../images/game-icons-70.png") no-repeat 0 0;
+    margin-top: 10px;
+}
+
+.game li span {
+    display: inline-block;
+    width: 102px;
+    font-size: 14px;
+    line-height: 14px;
+    color: #A6A9AE;
+    position: absolute;
+    left: -17px;
+    top: 81px;
+}
+
+/*S = 导航*/
+.nav {
+    width: 97%;
+    height: 0px;
+    background-color: rgba(40, 53, 79, .9);
+    position: relative;
+    top: 20px;
+    left: 20px;
+    z-index: 30;
+    opacity: 0;
+}
+.nav li {
+    float: left;
+    height: 72px;
+    line-height: 72px;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+.nav li a {
+    display: inline-block;
+    color: #e6e9ef;
+    border-right: 1px solid rgba(255, 255, 255, .05);
+    padding: 0 20px;
+    height: 72px;
+}
+
+.nav .nav_logo {
+    width: 245px;
+    height: 72px;
+    background: url("../images/carbon-fiber.jpg") no-repeat;
+}
+.nav .nav_logo a {
+    display: inline-block;
+    width: 203px;
+    height: 60px;
+    margin: 6px 21px;
+    background: url("../images/nav-logo-sm.png");
+}
+
+.nav .btn_buy {
+    float: right;
+    text-align: center;
+}
+
+.nav .btn_buy a {
+    display: inline-block;
+    width: 112px;
+    height: 72px;
+    line-height: 72px;
+    font-size: 18px;
+    background-color: #FF9C00;
+    color: #FEEFDD;
+}
+
+.nav .nav_border {
+    height: 5px;
+    background-color: rgba(0, 0, 0, .25);
+}
+
+/* E= *导航/
+
+/*立即购买 部分*/
+.buy {
+    border-top: 5px solid #989798;
+    background: url("../images/buy-bar-bg.jpg");
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 70px;
+    position: relative;
+    z-index: 3;
+}
+
+.buy_btn a {
+    display: inline-block;
+    width: 248px;
+    height: 52px;
+    line-height: 52px;
+    background-color: #FF9C00;
+    font-size: 26px;
+    color: #000;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.buy .install {
+    font-size: 14px;
+    color: #FFF;
+    margin-top: 18px;
+}
+
+.buy .install span, .install a {
+    color: #FFC712;
+}
+
+.install a {
+    text-decoration: underline;
+}
+
+.buy .join {
+    margin-top: 28px;
+}
+
+.buy .join a {
+    display: inline-block;
+    width: 144px;
+    height: 40px;
+    line-height: 40px;
+    border: 2px solid #FFC70E;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #FFC70E;
+}
+
+/*S= footer部分*/
+.footer {
+    border-top: 1px solid #414141;
+    background: #202020;
+}
+
+.footerWrap {
+    width: 80%;
+    padding-top: 48px;
+    margin: 0 auto;
+}
+
+.footerWrap .onlineService {
+    overflow: hidden;
+}
+
+.footerWrap .onlineService li {
+    float: left;
+    margin-right: 38px;
+}
+
+.onlineService li a {
+    display: inline-block;
+    color: #CCC;
+    font-size: 14px;
+    height: 24px;
+}
+
+.onlineService li a:hover {
+    color: #FFF;
+}
+
+.onlineService li a b {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    margin-right: 8px;
+    top: 7px;
+    position: relative;
+    background: url("../images/sprite-24-blue.png") no-repeat;
+}
+
+.onlineService li .icon1 {
+    background-position: -99px 0px;
+}
+
+.onlineService li .icon2 {
+    background-position: -144px -24px;
+}
+
+.onlineService li .icon3 {
+    background-position: -24px -119px;
+}
+
+.footerWrap .copyright {
+    margin: 48px auto 10px;
+    padding: 0 0 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, .15);
+}
+
+.copyright .logo {
+    display: inline-block;
+    width: 133px;
+    height: 71px;
+    background: url("../images/blizzard.png");
+}
+
+.copyright .netEase {
+    display: inline-block;
+    width: 105px;
+    height: 33px;
+    margin-left: 30px;
+    background: url("../images/logo_ne.png");
+}
+
+.copyright .info {
+    margin-left: 102px;
+}
+
+.info ul {
+    margin-bottom: 20px;
+}
+
+.info li {
+    float: left;
+    font-size: 14px;
+    color: #FFF;
+}
+
+li.spacer {
+    padding: 0 10px;
+}
+
+.info p {
+    height: 20px;
+    color: #909090;
+}
+
+.info .police {
+    margin-top: 11px;
+}
+
+.info .police img {
+    margin-right: 8px;
+}
+
+.footerWrap .counsel {
+    text-align: center;
+    color: #636363;
+}
+
+.counsel p {
+    height: 20px;
+}
+
+/*E= footer部分*/

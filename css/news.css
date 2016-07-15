@@ -1,0 +1,321 @@
+body {
+    background-image: url(../images/bg-news-index.jpg);
+}
+img {
+    cursor: pointer;
+}
+/*navbanner部分开始*/
+.navbanner {
+    width: 1171px;
+    height: 525px;
+    margin-left: 89px;
+    margin-top: 44px;
+}
+
+.ban-top-l {
+    width: 572px;
+    height: 249px;
+    border: 3px solid #705E5C;
+    /*background-image: url(../images/GameLive_OW_Panel-L_JP_696x306.jpg);*/
+    float: left;
+    margin-right: 19px;
+    position: relative;
+}
+.navbanner span {
+    width: 552px;
+    height: 56px;
+    background-color: #232324;
+    padding-left: 20px;
+    font: 400 18px/56px "microsoft yahei";
+    color: #F0EDF2;
+    opacity: 0.9;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.navbanner s {
+    width: 252px;
+    height: 56px;
+    background-color: #232324;
+    padding-left: 20px;
+    font: 400 18px/56px "microsoft yahei";
+    color: #F0EDF2;
+    opacity: 0.9;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.ban-top-c {
+    width: 272px;
+    height: 249px;
+    border: 3px solid #705E5C;
+    /*background-image: url(../images/YQNE4PPHT4L71463692421007.jpg);*/
+    float: left;
+    position: relative;
+}
+.ban-top-c i {
+    width: 47px;
+    height: 47px;
+    background: url(../images/youtube-btn-ylw.png) center center no-repeat;
+    position: absolute;
+    top: 70px;
+    left: 120px;
+}
+
+.ban-top-r {
+    width: 272px;
+    height: 249px;
+    border: 3px solid #705E5C;
+    /*background: url(../images/shangcheng340X312.jpg) no-repeat;*/
+    float: right;
+    position: relative;
+}
+
+.banner-top {
+    margin-bottom: 14px;
+}
+
+.ban-bottom-l {
+    width: 272px;
+    height: 249px;
+    border: 3px solid #705E5C;
+    /*background: url(../images/8DSSXISUUN6W1461364091598.jpg) no-repeat;*/
+    float: left;
+    margin-right: 20px;
+    position: relative;
+}
+
+.ban-bottom-c {
+    width: 272px;
+    height: 249px;
+    border: 3px solid #705E5C;
+    /*background: url(../images/13FJVM9SNGOV1457373016712.jpg) center center no-repeat;*/
+    float: left;
+    position: relative;
+}
+
+.ban-bottom-r {
+    width: 572px;
+    height: 249px;
+    border: 3px solid #705E5C;
+    /*background: url(../images/Soldier76Short_OW_Panel-L_JP_696x306.jpg) center center no-repeat;*/
+    float: right;
+    position: relative;
+}
+.ban-bottom-r i {
+    width: 47px;
+    height: 47px;
+    background: url(../images/youtube-btn-ylw.png) center center no-repeat;
+    position: absolute;
+    top: 66px;
+    left: 262px;
+}
+/*navbanner部分结束*/
+/*游戏新闻展示部分开始*/
+.product {
+    width: 1190px;
+    height: 700px;
+    margin: 0 auto;
+    margin-top: 35px;
+    border-top: 2px solid #605C5E;
+    overflow: hidden;
+}
+
+.product .product1 {
+    height: 171px;
+    border-bottom: 1px solid #2F2F30;
+}
+
+.product .product1-l {
+    width: 257px;
+    height: 125px;
+    /*background: url(../images/j_chinajoy_0526_se.jpg) no-repeat;*/
+    border: 3px solid #575656;
+    float: left;
+    margin-left: 14px;
+    margin-top: 20px;
+}
+
+.product .product2 {
+    height: 171px;
+    border-bottom: 1px solid #2F2F30;
+}
+
+.product .product2-l {
+    width: 257px;
+    height: 125px;
+    /*background: url(../images/260x130.jpg) no-repeat;*/
+    border: 3px solid #575656;
+    float: left;
+    margin-left: 14px;
+    margin-top: 20px;
+}
+
+.product .product3 {
+    height: 171px;
+    border-bottom: 1px solid #2F2F30;
+}
+
+.product .product3-l {
+    width: 257px;
+    height: 125px;
+    /*background: url(../images/JRZUVK6T3CZQ1445913888809.jpg) no-repeat;*/
+    border: 3px solid #575656;
+    float: left;
+    margin-left: 14px;
+    margin-top: 20px;
+}
+
+.product .product4 {
+    height: 171px;
+    border-bottom: 1px solid #2F2F30;
+}
+
+.product .product4-l {
+    width: 257px;
+    height: 125px;
+    /*background: url(../images/260-130中国首发.jpg) no-repeat;*/
+    border: 3px solid #575656;
+    float: left;
+    margin-left: 14px;
+    margin-top: 20px;
+}
+
+.product .product5 {
+    height: 171px;
+    border-bottom: 1px solid #2F2F30;
+}
+
+.product .product5-l {
+    width: 257px;
+    height: 125px;
+    /*background: url(../images/X0TD6VYJPGR61464323117685.jpg) no-repeat;*/
+    border: 3px solid #575656;
+    float: left;
+    margin-left: 14px;
+    margin-top: 20px;
+}
+
+.product .product6 {
+    height: 171px;
+    border-bottom: 1px solid #2F2F30;
+}
+
+.product .product6-l {
+    width: 257px;
+    height: 125px;
+    /*background: url(../images/6JPEFQHBPWWW1464286863078.jpg) no-repeat;*/
+    border: 3px solid #575656;
+    float: left;
+    margin-left: 14px;
+    margin-top: 20px;
+}
+
+.product .productpub-r {
+    float: left;
+    margin-left: 14px;
+    margin-top: 20px;
+}
+
+.product .productpub-r p {
+    font: 400 18px/30px "microsoft yahei";
+    color: white;
+}
+
+.product .productpub-r s {
+    font: 400 12px/20px "microsoft yahei";
+    font-style: italic;
+    color: white;
+}
+.product .productpub-r span {
+    font: 400 12px/20px "microsoft yahei";
+    color: white;
+    letter-spacing: 1px;
+    margin-top: 8px;
+    display: block;
+}
+.load {
+    height: 114px;
+    position: relative;
+}
+input.loading {
+    width: 240px;
+    height: 40px;
+    background-color: #121315;
+    border: 2px solid #FFFFFF;
+    font-size: 30px;
+    color: #FFFFFF;
+    display: block;
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    margin-left: -120px;
+    /*margin: 35px auto;*/
+    cursor: pointer;
+    z-index: 1;
+}
+.mask {
+    width: 880px;
+    height: 500px;
+    /*background-color: gold;*/
+    float: left;
+    margin-left: 15px;
+    position: fixed;
+    top: 100px;
+    right: 100px;
+    display: none;
+    z-index: 8;
+}
+
+/*游戏新闻展示部分结束*/
+
+
+/*购买部分开始*/
+.purchase {
+    height: 305px;
+    background: url("../images/buy-bar-bg.jpg") no-repeat;
+    text-align: center;
+    overflow: hidden;
+    border-top: 6px solid #555656;
+}
+
+.purchase .purchase-btn {
+    margin: 80px auto 16px;
+    display: block;
+    width: 248px;
+    height: 52px;
+    background-color: #FF9C00;
+    font: 400 26px/52px "microsoft yahei";
+    color: #000000;
+    border-radius: 2px;
+}
+
+.purchase p {
+    background: url("../images/buytips-icon.png") 333px 0 no-repeat;
+    font-size: 12px;
+    color: white;
+}
+
+.purchase span {
+    font-weight: 700;
+    color: #FFC70E;
+}
+
+.purchase a {
+    color: #FFC70E;
+    text-decoration: underline;
+}
+
+.purchase .join-we {
+    margin: 20px auto 0px;
+    display: block;
+    width: 144px;
+    height: 40px;
+    border: 2px solid #FFC70E;
+    line-height: 40px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/*购买部分结束*/

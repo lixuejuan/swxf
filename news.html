@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>守望先锋--新闻页</title>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/news.css"/>
+    <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+
+        $(function () {
+            //鼠标经过所有的img，图片边框高亮
+            $("img").mouseenter(function () {
+                $(this).parent().css({
+                    "borderColor": "white",
+                    "opacity": 0.8
+                })
+            })
+            //鼠标离开所有的img，图片边框还原
+            $("img").mouseleave(function () {
+                $(this).parent().css({
+                    "borderColor": "#575656",
+                    "opacity": 1
+                })
+            })
+            //鼠标经过product里面的img让mask显示
+            $(".product img").mouseenter(function () {
+                $(this).parent().siblings(".mask").stop().fadeIn(300);
+            })
+            //鼠标离开product里面的img让mask隐藏
+            $(".product img").mouseleave(function () {
+                $(this).parent().siblings(".mask").stop().fadeOut(300);
+            })
+            $(".loading").click(function () {
+                if(this.value==="加载更多"){
+                    $(".product").css({
+                        "overflow":"visible"
+                    })
+                    //$(this).hide();
+                    $(this).parent().css({
+                        "margin-top":"340px"
+                    })
+                    $(this).val("点击回缩");
+                }else{
+                    $(".product").css({
+                        "overflow":"hidden"
+                    })
+                    //$(this).hide();
+                    $(this).parent().css({
+                        "margin-top":"0px"
+                    })
+                    $(this).val("加载更多");
+
+                }
+
+            })
+        })
+    </script>
+</head>
+<body>
+<div class="header">
+    <div class="top clearfix">
+        <div class="top_left fl">
+            <ul>
+                <li><a href="" class="top_l_icon"></a></li>
+                <li class="game">
+                    <a href="javascript:;">
+                        游戏<s class="dropdown"></s>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <i></i>
+                                <span>《魔兽世界®》</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i></i>
+                                <span>《暗黑破坏神®III》</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i></i>
+                                <span>《星际争霸®II》</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i></i>
+                                <span>《炉石传说®》</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i></i>
+                                <span>《风暴英雄™》</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i></i>
+                                <span>《守望先锋》</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="">商城</a></li>
+            </ul>
+        </div>
+        <div class="top_right fr">
+            <ul>
+                <li><a href="">支持</a></li>
+                <li>
+                    <a href="">
+                        您的通行证<s class="dropdown"></s>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="nav_main clearfix">
+            <div class="fl nav_logo"><a href="#"></a></div>
+            <ul class="fl">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="gameFeature.html">游戏特色</a></li>
+                <li><a href="hero.html">英雄</a></li>
+                <li><a href="videoImages.html">视频图片</a></li>
+                <li><a href="news.html">新闻</a></li>
+                <li><a href="javascript:;">下载</a></li>
+                <li><a href="bbs.html">论坛</a></li>
+            </ul>
+            <div class="btn_buy">
+                <a href="javascript:;">立即购买</a>
+            </div>
+        </div>
+        <div class="nav_border"></div>
+    </div>
+</div>
+<!--navbanner部分开始-->
+<div class="navbanner">
+    <div class="banner-top clearfix">
+        <div class="ban-top-l">
+            <img src="images/GameLive_OW_Panel-L_JP_696x306.jpg" width="572" height="249" alt=""/>
+            <span>未来已至 - 《守望先锋》正式上线！</span>
+        </div>
+        <div class="ban-top-c">
+            <img src="images/YQNE4PPHT4L71463692421007.jpg" width="272" height="249" alt=""/>
+            <s>观看第三部动画短片</s>
+            <i></i>
+        </div>
+        <div class="ban-top-r">
+            <img src="images/shangcheng340X312.jpg" width="272" height="249" alt=""/>
+            <s>《守望先锋》全新周边开售</s>
+        </div>
+    </div>
+    <div class="banner-bottom">
+        <div class="ban-bottom-l">
+            <img src="images/8DSSXISUUN6W1461364091598.jpg" width="272" height="249" alt=""/>
+            <s>《守望先锋》竞技比赛前瞻</s>
+        </div>
+        <div class="ban-bottom-c">
+            <img src="images/13FJVM9SNGOV1457373016712.jpg" width="272" height="249" alt=""/>
+            <s>《守望先锋》测试版本</s>
+        </div>
+        <div class="ban-bottom-r">
+            <img src="images/Soldier76Short_OW_Panel-L_JP_696x306.jpg" width="572" height="249" alt=""/>
+            <span>观看动画短片《英雄》</span>
+            <i></i>
+        </div>
+    </div>
+</div>
+<!--navbanner部分结束-->
+<!--游戏新闻展示部分开始-->
+<div class="product clearfix">
+    <div class="product1">
+        <div class="product1-l">
+            <img src="images/j_chinajoy_0526_se.jpg" width="257" height="125" alt=""/>
+        </div>
+        <div class="productpub-r">
+            <p>暴雪COSPLAY大赛报名截止仅剩三天</p>
+            <s>发布日期：2016-06-15</s>
+        </div>
+        <div class="mask">
+            <img src="images/Image%202.png" width="880" height="500" alt=""/>
+        </div>
+    </div>
+    <div class="product2">
+        <div class="product2-l">
+            <img src="images/260x130.jpg" width="257" height="125" alt=""/>
+        </div>
+        <div class="productpub-r">
+            <p>暴雪嘉年华现场票明起开抢 考拉加赠特别福利</p>
+            <s>发布日期：2016-06-13</s><br/>
+            <span>首度为中国玩家预留的2016年暴雪嘉年华现场门票，即将于明天上午10点在网易考拉和暴雪游戏天猫旗舰店同步开抢！</span>
+        </div>
+        <div class="mask">
+            <img src="images/Image%203.png" width="880" height="500" alt=""/>
+        </div>
+    </div>
+    <div class="product3">
+        <div class="product3-l">
+            <img src="images/JRZUVK6T3CZQ1445913888809.jpg" width="257" height="125" alt=""/>
+        </div>
+        <div class="productpub-r">
+            <p>社区媒体推荐</p>
+            <s>发布日期：2016-06-13</s><br/>
+            <span>为大家带来社区媒体的精彩内容</span>
+        </div>
+        <div class="mask">
+            <img src="images/Image%206.png" width="880" height="500" alt=""/>
+        </div>
+    </div>
+    <div class="product4">
+        <div class="product4-l">
+            <img src="images/260-130中国首发.jpg" width="257" height="125" alt=""/>
+        </div>
+        <div class="productpub-r">
+            <p>2016暴雪嘉年华现场门票将首次在中国发售</p>
+            <s>发布日期：2016-06-03</s><br/>
+            <span>本届暴雪嘉年华首度为中国玩家预留了数量非常有限的一批现场门票。这批门票将于6月14日起，在网易考拉（www.kaola.com）和暴雪游
+                <br/>
+                戏天猫旗舰店（blz.tmall.com）同步发售。
+            </span>
+        </div>
+        <div class="mask">
+            <img src="images/Image%204.png" width="880" height="500" alt=""/>
+        </div>
+    </div>
+    <div class="product5">
+        <div class="product5-l">
+            <img src="images/X0TD6VYJPGR61464323117685.jpg" width="257" height="125" alt=""/>
+        </div>
+        <div class="productpub-r">
+            <p>守望先锋回来了：联合国确认侠盗活动后带来的不确定因素与新的希望</p>
+            <s>发布日期：2016-05-30</s><br/>
+            <span>调查人员已确认，包括昨天针对博物馆的袭击在内的全球数起暴力活动都与若干名前守望先锋特工有关。阿特拉斯新闻的奥林匹亚•肖回顾
+                <br/>
+                了这一备受争议组织的前世今生。
+            </span>
+        </div>
+        <div class="mask">
+            <img src="images/Image%207.png" width="880" height="500" alt=""/>
+        </div>
+    </div>
+    <div class="product6">
+        <div class="product6-l">
+            <img src="images/6JPEFQHBPWWW1464286863078.jpg" width="257" height="125" alt=""/>
+        </div>
+        <div class="productpub-r">
+            <p>《守望先锋》数字漫画：《毁灭者》</p>
+            <s>发布日期：2016-05-27</s><br/>
+            <span>《守望先锋》数字漫画系列第六部《毁灭者》现已公布！在本篇中，守望先锋的天才工程师和武器专家托比昂·林德霍姆将为了一个超越人
+                <br/>
+                类自身的任务而战。
+            </span>
+        </div>
+        <div class="mask">
+            <img src="images/Image%205.png" width="880" height="500" alt=""/>
+        </div>
+    </div>
+</div>
+<div class="load">
+    <input type="button" class="loading" value="加载更多"/>
+</div>
+<!--游戏新闻展示部分结束-->
+<!--购买部分开始-->
+<div class="purchase ">
+    <div class="w">
+        <a href="javascript:" class="purchase-btn">立即购买</a>
+
+        <p><span>游戏安装提醒：</span>安装游戏需要64位的 Windows® 7/Windows® 8/Windows® 10操作系统 (不支持Mac系统)
+            <a href="javascript:">查看详情>></a></p>
+        <a href="javascript:" class="join-we">加入我们</a>
+    </div>
+</div>
+<!--购买部分结束-->
+<!--S= footer部分-->
+<div class="footer">
+    <div class="footerWrap">
+        <ul class="onlineService">
+            <li>
+                <a href="#"><b class="icon1"></b>在线客服</a>
+            </li>
+            <li>
+                <a href="#"><b class="icon2"></b>反馈</a>
+            </li>
+            <li>
+                <a href="#"><b class="icon3"></b>加入我们</a></li>
+        </ul>
+        <div class="copyright clearfix">
+            <div class="fl">
+                <a href="#" class="logo"></a>
+                <a href="javascript:;" class="netEase"></a>
+            </div>
+            <div class="info fl">
+                <ul class="clearfix">
+                    <li>隐私</li>
+                    <li class="spacer">|</li>
+                    <li>法律条款</li>
+                    <li class="spacer">|</li>
+                    <li>API</li>
+                </ul>
+                <p>
+                    &copy;2016 暴雪娱乐股份有限公司版权所有 由上海网之易网络科技发展有限公司运营 著作权侵权 新广出审[2016]378号
+                </p>
+
+                <p>
+                    文网游进字[2016]0025号 沪网文[2014]0731-161号 增值电信业务经营许可证编号：沪B2－20080012
+                </p>
+
+                <p>
+                    互联网违法和不良信息举报电话：0571-28090163 沪公网安备 31011502032167号
+                </p>
+
+                <div class="police">
+                    <img src="images/police.png" alt=""/>
+                    <img src="images/zx110.png" alt=""/>
+                    <img src="images/sgs-icon.png" alt=""/>
+                    <img src="images/icon20120516.png" alt=""/>
+                </div>
+            </div>
+        </div>
+        <div class="counsel">
+            <p>
+                积极健康的游戏心态是健康游戏的开端，本游戏故事情节设置紧凑，请您合理控制游戏时间，避免沉溺游戏影响生活，注意自我保护，防范网络陷阱。
+            </p>
+
+            <p>
+                健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。
+            </p>
+        </div>
+    </div>
+</div>
+<!--E= footer部分-->
+</body>
+</html>
